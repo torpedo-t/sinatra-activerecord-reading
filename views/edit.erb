@@ -1,0 +1,6 @@
+<form action="/models/<%= @model.id %>" method="post">
+    <input id="hidden" type="hidden" name="_method" value="patch">
+    <input type="text" ...>
+</form>
+<!-- The MethodOverride middleware will intercept every request sent and received by our application -->
+<!-- If it finds a request with name="_method" , it will set the request type based on what is set in the value attributes, which in this case is patch. -->
